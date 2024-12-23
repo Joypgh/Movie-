@@ -9,32 +9,7 @@
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <script>
-   function toggleTheme() {
-      const html = document.documentElement;
-      const themeToggleIcon = document.getElementById('theme-toggle-icon');
-      if (html.classList.contains('dark')) {
-        html.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-        themeToggleIcon.classList.remove('fa-sun');
-        themeToggleIcon.classList.add('fa-moon');
-      } else {
-        html.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-        themeToggleIcon.classList.remove('fa-moon');
-        themeToggleIcon.classList.add('fa-sun');
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const themeToggleIcon = document.getElementById('theme-toggle-icon');
-      if (localStorage.getItem('theme') === 'dark') {
-        document.documentElement.classList.add('dark');
-        themeToggleIcon.classList.remove('fa-moon');
-        themeToggleIcon.classList.add('fa-sun');
-      }
-    });
-  </script>
+  
  </head>
  <body class="bg-gray-900 text-white font-roboto dark:bg-gray-100 dark:text-gray-900">
   <div class="container mx-auto p-4">
